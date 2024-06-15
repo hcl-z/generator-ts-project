@@ -1,0 +1,18 @@
+{
+  "Generator for Yeoman": {
+    "prefix": "gen",
+    "body": [
+      "const Generator = require(\"yeoman-generator\");",
+      "const { store } = require(\"../utils\");",
+      "",
+      "class $0Generator extends Generator {",
+      "}",
+      "module.exports = {",
+      " Generator: $0Generator,",
+      " path: require.resolve(\"./\")",
+      "};"
+    ],
+    "description": "Generates a Yeoman generator class for linting tasks.",
+    "scope": "javascript"
+  }
+}

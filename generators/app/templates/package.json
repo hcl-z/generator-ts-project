@@ -1,0 +1,45 @@
+{
+  "name": "<%- projectName %>",
+  "version": "1.0.0",
+  "author": "<%- userName %> <%- email %>",
+  "license": "MIT",
+  "files": [
+    "dist"
+  ],
+  "description": "<%- description %>",
+  "keywords": <%- handleKeywords() %>,
+  "homepage": "https://github.com/<%- userName %>/<%- projectName %>",
+  "main": "dist/index.cjs",
+  "module": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "test": "vitest",
+    "lint": "biome check --apply-unsafe ./src && biome format --write ./src",
+    "build": "tsup --config tsup.config.ts",
+     <%- generatorJSON("scripts") %>},
+  "bugs": {
+    "url": "https://github.com/<%- userName %>/<%- projectName %>/issues",
+    "email": "<%- email %>"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/<%- userName %>/<%- projectName %>.git"
+  },
+  "dependencies":{
+     <%- generatorJSON("dependencies") %>},
+  "devDependencies": {
+    "@biomejs/biome": "^1.1.2",
+    "tsup": "^7.2.0",
+    "typescript": "^5.2.2",
+    "vitest": "^0.34.4",
+     <%- generatorJSON("devDependencies") %>},
+  "lint-staged": {
+    "src/**/*.{js,jsx,ts,tsx}": [
+      "eslint --ext js,ts,tsx --fix"
+    ],
+    "src/**/*.{js,jsx,ts,tsx,json,css,scss,md}": [
+      "prettier --write",
+      "git add"
+    ]
+  }
+}
