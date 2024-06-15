@@ -1,6 +1,6 @@
 {
   "name": "generator-normal-tsp",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "generating a project with tsup, biome, vitest",
   "author": "hcl-z",
   "license": "MIT",
