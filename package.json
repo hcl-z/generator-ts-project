@@ -31,7 +31,7 @@
     "lodash": "^4.17.21",
     "mkdirp": "^3.0.1",
     "yeoman-generator": "5.10.0",
-    "yosay": "^2.0.2"
+    "yosay": "^3.0.0"
   },
   "devDependencies": {
     "@typescript-eslint/eslint-plugin": "^7.8.0",
