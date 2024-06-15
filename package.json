@@ -1,13 +1,13 @@
 {
-  "name": "generator-ts-project",
+  "name": "generator-normal-tsp",
   "version": "0.0.2",
   "description": "generating a project with tsup, biome, vitest",
   "author": "hcl-z",
   "license": "MIT",
-  "homepage": "https://github.com/hcl-z/generator-tsp",
+  "homepage": "https://github.com/hcl-z/generator-ts-project",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/hcl-z/generator-tsp.git"
+    "url": "git+https://github.com/hcl-z/generator-ts-project.git"
   },
   "keywords": [
     "yeoman-generator",
