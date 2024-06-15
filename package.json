@@ -25,7 +25,7 @@
     "release": "bumpp"
   },
   "dependencies": {
-    "@antfu/eslint-config": "^2.20.0",
+    "@antfu/eslint-config": "^2.21.1",
     "chalk": "^2.1.0",
     "inquirer-npm-name": "^4.0.0",
     "lodash": "^4.17.21",
