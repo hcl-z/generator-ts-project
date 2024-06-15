@@ -1,6 +1,6 @@
 {
   "name": "generator-ts-project",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "generating a project with tsup, biome, vitest",
   "author": "hcl-z",
   "license": "MIT",
