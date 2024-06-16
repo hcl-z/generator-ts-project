@@ -55,7 +55,7 @@ module.exports = class extends Generator {
       mkdirp.sync(projectName)
     }
 
-    const copyFiles = ['src', 'types', '.vscode']
+    const copyFiles = ['src', '.vscode']
     const copyTplFiles = ['package.json']
 
     copyFiles.forEach((file) => {

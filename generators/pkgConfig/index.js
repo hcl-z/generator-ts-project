@@ -27,7 +27,6 @@ class PkgGenerator extends Generator {
       {
         name: 'repository',
         message: 'Repository',
-        store: true,
         default: answers =>
           `https://github.com/${answers.userName}/${store.get('projectName')}`,
       },

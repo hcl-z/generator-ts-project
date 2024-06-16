@@ -101,7 +101,6 @@ const store = new GeneratorStore({ generatorJSON, handleKeywords })
 
 function generatorJSON(field) {
   const storeArr = Object.entries(store.get(field) || {})
-  console.log('field', field, storeArr)
   return storeArr.reduce((acc, [key, value], index) => {
     const isLast = index === storeArr.length - 1
     acc += `"${key}": "${value}"${isLast ? '' : ','}\n`
